@@ -2,20 +2,14 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
-};
-
-const newsletter: Newsletter = {
-  display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  firstName: "Samantha",
+  lastName: "Stoiber",
+  name: `Samantha Stoiber`,
+  role: "Electrical and Computer Engineer",
+  avatar: "/images/avatar.jpg", // come back to edit
+  email: "samstoi@uw.edu",
+  location: "America/Seattle", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Basic Chinese"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const social: Social = [
@@ -25,13 +19,13 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
-    essential: true,
+    link: "https://github.com/samyjs0808",
+    essential: false,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/samantha-stoiber",
     essential: true,
   },
   {
@@ -44,7 +38,7 @@ const social: Social = [
     name: "Threads",
     icon: "threads",
     link: "https://www.threads.com/@once_ui",
-    essential: true,
+    essential: false,
   },
   {
     name: "Email",
@@ -76,7 +70,7 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+    I'm Samantha, an Electrical and Computer Engineering student at the <Text as="span" size="xl" weight="strong">University of Washington</Text>, specializing in VLSI and digital design. <br /> I'm passionate about creating innovative solutions at the intersection of health and technology. After hours, I build my own projects.
 </>
   ),
 };
@@ -102,9 +96,10 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Samantha is an Electrical and Computer Engineering student at the University of Washington, specializing in VLSI and digital design. 
+        With a passion for creating innovative solutions at the intersection of health and technology, Samantha is dedicated to pushing the 
+        boundaries of what's possible. After hours, she builds her own projects, exploring new ideas and technologies to make a positive 
+        impact on the world.
       </>
     ),
   },
@@ -113,18 +108,13 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Hover Inc, Aero",
+        timeframe: "2026 - Present",
+        role: "Electrical and Computer Engineering Intern",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+            Currently interning for the summer of 2026. Stay tuned for more updates!
+          </>
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
@@ -137,17 +127,16 @@ const about: About = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Silicon Systems Research Lab, University of Washington",
+        timeframe: "Jan 2026 - Present",
+        role: "Undergraduate Research Assistant",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Building a LLE simulator with Python to model the behavior of microresonators in order to explore the uses of photonics for biosensing.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Worked in partnership with start up company, Primary Bioscience to conduct protein analysis on 12 different peptides using Raman Spectroscopy.
+            On InVia microscope. Collected spectra and spectra mapping data. 
           </>,
         ],
         images: [],
@@ -159,17 +148,13 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "University of Washington",
+        description: <>3rd year Electrical and Computer Engineering student.<br /> Departmental Honors student.</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Technical skills",
     skills: [
       {
@@ -232,23 +217,23 @@ const about: About = {
   },
 };
 
-const blog: Blog = {
-  path: "/blog",
-  label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
+//const blog: Blog = {
+  //path: "/blog",
+  //label: "Blog",
+  //title: "Writing about design and tech...",
+  //description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
-};
+//};
 
-const work: Work = {
+/*const work: Work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
-};
+}; */
 
 const gallery: Gallery = {
   path: "/gallery",
@@ -301,4 +286,4 @@ const gallery: Gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, /*newsletter,*/ home, about, /*blog, work, gallery*/ };
