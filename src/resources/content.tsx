@@ -149,7 +149,7 @@ const about: About = {
     institutions: [
       {
         name: "University of Washington",
-        description: <>3rd year Electrical and Computer Engineering student.<br /> Departmental Honors student.</>,
+        description: <>3rd year Electrical and Computer Engineering student. <br /> Departmental Honors student.</>,
       },
     ],
   },
